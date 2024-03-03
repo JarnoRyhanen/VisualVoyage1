@@ -238,6 +238,10 @@ img {
         flex: 100%;
         max-width: 100%;
     }
+
+    .footer p {
+        font-size: 12px;
+    }
 }
 
 p {
