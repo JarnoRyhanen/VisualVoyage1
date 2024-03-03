@@ -7,8 +7,6 @@
  function showImage( image) {
      console.log(image.id);
 
-      var img = document.getElementById(image.id);
-
       var modalImg = document.getElementById("modalImage");
       var captionText = document.getElementById("caption");
 
@@ -26,8 +24,7 @@
      modal.style.display = "none";
  }
 
- function myFunction() {
-
+ function openDropDown() {
     var x = document.getElementById("links");
     if (x.style.display === "block") {
       x.style.display = "none";

@@ -194,7 +194,7 @@ img {
         right: 0;
         width: 20vw;
         height: fit-content;
-        top: 4vh;
+        top: 6vh;
         background-color: #1C3257;
         z-index: 9;
     }
@@ -205,6 +205,7 @@ img {
     }
  
     .textBox {
+        top: 6vh;
         width: fit-content;
         height: fit-content;
     }
