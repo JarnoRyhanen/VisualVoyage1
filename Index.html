@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        VisualVoyage
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="navigationBar">
+        <div class="links">
+            <a href="Index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contacts.html">Contacts</a>
+        </div>
+    </div>
+
+    <div id="heroImage">
+        <img src="images/1664513071519.jpg" />
+    </div>
+
+
+    <div id="textBox" class="textBox">
+        <h1 class="title">
+            VisualVoyage
+        </h1>
+        <h2>
+            Photography done to perfection
+        </h2>
+        <p>
+            Welcome to VisualVoyage, home to the most beautiful landscape and nature photography ever taken.
+            We’ll constatly travel the world to explore what kind of natural wonders the Earth has to offer, and are
+            always looking for more talented photographers to join the team.
+        </p>
+    </div>
+
+    <div class="heading2">
+        <h2>
+            Sneak peak of our greatest work yet
+        </h2>
+    </div>
+    <div id="images" class="images">
+    </div>
+
+    <div class="row" id="galleryView">
+        <div class="column">
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/beach.jpg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/grove.jpeg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/antarctica.jpg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/featuredwaterfalls.jpg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/skogafoss-waterfall-iceland.jpg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/5d921bea21214c78770562c9.webp" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+        </div>
+        <div class="column">
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/peak-mountains.webp" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+            <div class="image-hover-zoom">
+                <img src="images/homepagegallery/mirrorlake.jpg" alt="Image of a beach" onclick="showImage(this)">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+<footer class="footer">
+    <p> Copyright &#169; 2024, Jarno Ryhänen </p>
+</footer>
+
+</html>
