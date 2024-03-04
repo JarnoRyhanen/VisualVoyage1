@@ -69,6 +69,7 @@ body {
 
 
 .footer {
+    position: relative;
     width: 100%;
     height: 5vh;
     background-color: #1C3257;
@@ -347,8 +348,73 @@ Modal image css
     cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 767px) {
     .modal-content {
         width: 100%;
+    }
+}
+
+.employees {
+    background-color: #1C3257;
+    position: relative;
+    margin: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: baseline;
+    border: #1C3257;
+    border-radius: 24px;
+}
+
+.employee_info {
+    padding: 24px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.employee_photo {
+    width: 350px;
+    height: max-content;
+    border-radius: 24px;
+}
+
+.info_box p{
+    margin: 16px;
+    color: #F5F5F5;
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .employees {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .employee_info {
+        width: fit-content;
+        flex-direction: column;
+    }
+    
+    .info_box p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 467px) {
+    .employee_photo {
+        width: 150px;
+        height: max-content;
+        border-radius: 24px;
+    }
+    .employee_info {
+        align-items: center;
+        width: fit-content;
+        flex-direction: column;
+    }
+    .info_box p{
+        font-size: 10px;
     }
 }
