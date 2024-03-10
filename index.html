@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<!-- TODO 
+<!-- TODO
 
     Korjaa koodi siistimmäks ja kommentoi sitä
 
 -->
 
-<body>
-    <header style="position: relative;">
+<body onresize="if(window.innerWidth >= 476 && window.innerWidth <= 478){
+    resetDefaultVisibility();
+}" >
+    <header>
         <nav class="navBar">
             <a href="index.html" class="logo">VisualVoyage</a>
             <div class="links" id="links">
@@ -35,7 +37,7 @@
         </nav>
     </header>
 
-    <section style="position: relative;">
+    <section id="section">
         <img src="images/1664513071519.jpg" class="hero" />
 
         <div class="textBox">
@@ -50,6 +52,8 @@
                 We’ll constatly travel the world to explore what kind of natural wonders the Earth has to offer, and are
                 always looking for more talented photographers to join the team.
             </p>
+            <a href="contacts.html" class="cta-button">
+                Contact Us!</a>
         </div>
 
         <h2 class="heading2">
@@ -108,7 +112,12 @@
     </section>
     <script src="script.js" async defer></script>
     <footer class="footer">
-        <p> Copyright &#169; 2024, Jarno Ryhänen </p>
+        <div>
+            <p> Copyright &#169; 2024, Jarno Ryhänen </p>
+        </div>
+        <div>
+            <a href="contacts.html">Contacts</a>
+        </div>
     </footer>
 </body>
 

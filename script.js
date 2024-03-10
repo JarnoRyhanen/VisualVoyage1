@@ -20,6 +20,8 @@ function showImage(image) {
 
 }
 
+
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
@@ -28,11 +30,19 @@ span.onclick = function () {
   modal.style.display = "none";
 }
 
+let links = document.getElementById("links");
+let section = document.getElementById("section");
 function openDropDown() {
-  var x = document.getElementById("links");
-  if (x.style.visibility === "visible") {
-    x.style.visibility = "collapse";
+  if (links.style.visibility === "visible") {
+    links.style.visibility = "collapse";
+    section.style.top = "0vh";
   } else {
-    x.style.visibility = "visible";
+    links.style.visibility = "visible";
+    section.style.top = "5vh";
   }
+}
+
+function resetDefaultVisibility() {
+  links.style.visibility = "visible";
+  section.style.top = "0vh";
 }

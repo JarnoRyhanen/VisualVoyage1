@@ -12,9 +12,19 @@ html {
 body {
     padding: 0;
     margin: 0;
-    min-width: 200px;
+    min-width: 300px;
     background-color: #F5F5F5;
     overflow-x: hidden;
+}
+
+
+header {
+    position: relative;
+}
+
+section {
+    position: relative;
+    top: 0vh;
 }
 
 .navBar {
@@ -23,8 +33,6 @@ body {
     max-width: 100vw;
     background-color: #1C3257;
     border-radius: 5px;
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -43,7 +51,6 @@ body {
 
 .hero {
     opacity: 0.65;
-    position: relative;
     max-width: 100%;
     width: 100%;
     height: auto;
@@ -52,22 +59,27 @@ body {
 }
 
 .textBox {
-    text-shadow: 1px 1px #1C3257;
     position: absolute;
     margin: auto;
     color: #1C3257;
     font-family: 'Lato';
-    font-weight: bold;
+    font-weight: bolder;
     max-height: 300px;
-    max-width: 500px;
+    max-width: 600px;
     height: 300px;
     text-align: center;
-    top: 15vh;
-    left: 30vw;
-    right: 30vw;
+    top: 0;
+    left: 25vw;
+    right: 25vw;
     z-index: 2;
 }
 
+.cta-button {
+    background-color: #1C3257;
+    border-radius: 20px;
+    padding: 16px;
+    cursor: pointer;
+}
 
 .footer {
     position: relative;
@@ -79,6 +91,10 @@ body {
     left: 0;
     bottom: 0;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .title {
@@ -127,8 +143,15 @@ img {
 .image-hover-zoom img:hover {
     transform: scale(1.5);
 }
-
+.navBar .links {
+    visibility: visible;
+}
 @media screen and (max-width: 767px) {
+
+
+    .navBar .links {
+        visibility: visible;
+    }
 
     .textBox .title {
         font-size: 32px;
@@ -141,15 +164,15 @@ img {
 
 
     .textBox {
-        top: 5vh;
+        left: 15vw;
+        right: 15vw;
         width: fit-content;
     }
 
     .textBox p {
-        font-size: 14px;
+        font-size: 16px;
         min-height: fit-content;
     }
-
 
     .heading2 {
         margin: auto;
@@ -159,6 +182,11 @@ img {
         color: #1C3257;
         font-size: 20px;
         z-index: 3;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 8px;
     }
 
     .column {
@@ -196,11 +224,9 @@ img {
         align-items: center;
 
         background-color: #1C3257;
-        width: 100%;
-        height: fit-content;
         right: 0;
         left: 0;
-        top: 6vh;
+        top: 5vh;
         z-index: 900;
     }
 
@@ -210,7 +236,6 @@ img {
     }
 
     .textBox {
-        top: 6vh;
         width: fit-content;
         height: fit-content;
     }
@@ -226,18 +251,16 @@ img {
 
     .textBox p {
         font-size: 10px;
-        min-height: fit-content;
-        min-width: fit-content;
+    }
+
+    .cta-button {
+        font-size: 8px;
+        padding: 8px;
+        border-radius: 10px;
     }
 
     .heading2 {
-        margin: auto;
-        padding: 10px;
-        text-align: center;
-        font-family: 'Lato';
-        color: #1C3257;
-        font-size: 12px;
-        z-index: 3;
+        font-size: 16px;
     }
 
     .column {
@@ -246,6 +269,10 @@ img {
     }
 
     .footer p {
+        font-size: 12px;
+    }
+
+    .footer a {
         font-size: 12px;
     }
 }
@@ -262,7 +289,7 @@ a {
     padding: 5px;
 }
 
-a:hover {
+.navBar a:hover {
     background-color: #F5F5F5;
     opacity: 100%;
     border-radius: 20px;
