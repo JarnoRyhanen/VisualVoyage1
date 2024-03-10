@@ -30,19 +30,14 @@ span.onclick = function () {
   modal.style.display = "none";
 }
 
-let links = document.getElementById("links");
-let section = document.getElementById("section");
 function openDropDown() {
+  let links = document.getElementById("links");
+  let section = document.getElementById("section");
   if (links.style.visibility === "visible") {
     links.style.visibility = "collapse";
     section.style.top = "0vh";
   } else {
     links.style.visibility = "visible";
-    section.style.top = "5vh";
+    section.style.top = "8vh";
   }
-}
-
-function resetDefaultVisibility() {
-  links.style.visibility = "visible";
-  section.style.top = "0vh";
 }
