@@ -13,92 +13,103 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<!-- TODO 
 
-    <div class="navigationBar">
-        <a href="index.html" class="logo">VisualVoyage</a>
-        <div class="links" id="links">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contacts.html">Contacts</a>
+    Korjaa koodi siistimmäks ja kommentoi sitä
+
+-->
+
+<body>
+    <header style="position: relative;">
+        <nav class="navBar">
+            <a href="index.html" class="logo">VisualVoyage</a>
+            <div class="links" id="links">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contacts.html">Contacts</a>
+            </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="openDropDown()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section style="position: relative;">
+        <img src="images/1664513071519.jpg" class="hero" />
+
+        <div class="textBox">
+            <h1 class="title">
+                VisualVoyage
+            </h1>
+            <h2>
+                Photography done to perfection
+            </h2>
+            <p>
+                Welcome to VisualVoyage, home to the most beautiful landscape and nature photography ever taken.
+                We’ll constatly travel the world to explore what kind of natural wonders the Earth has to offer, and are
+                always looking for more talented photographers to join the team.
+            </p>
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="openDropDown()">
-            <i class="fa fa-bars"></i>
-          </a>
-    </div>
-
-    <div id="heroImage">
-        <img src="images/1664513071519.jpg" class="hero" />
-    </div>
-
-
-    <div id="textBox" class="textBox">
-        <h1 class="title">
-            VisualVoyage
-        </h1>
-        <h2>
-            Photography done to perfection
-        </h2>
-        <p>
-            Welcome to VisualVoyage, home to the most beautiful landscape and nature photography ever taken.
-            We’ll constatly travel the world to explore what kind of natural wonders the Earth has to offer, and are
-            always looking for more talented photographers to join the team.
-        </p>
-    </div>
-
-    <div class="heading2">
-        <h2>
+        <h2 class="heading2">
             Sneak peak of our greatest work yet
         </h2>
-    </div>
 
-    <div class="row" id="galleryView">
-        <div class="column">
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/beach.jpg" alt="Image of a beach" onclick="showImage(this)">
+        <div class="row" id="galleryView">
+            <div class="column">
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/beach.jpg" alt="Image of a beach" onclick="showImage(this)">
+                </div>
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/grove.jpeg" alt="Image of a grove with a running stream of water"
+                        onclick="showImage(this)">
+                </div>
             </div>
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/grove.jpeg" alt="Image of a grove with a running stream of water" onclick="showImage(this)">
+            <div class="column">
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/antarctica.jpg"
+                        alt="Image of icebergs under a sunset in Antarctica" onclick="showImage(this)">
+                </div>
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/featuredwaterfalls.jpg"
+                        alt="Image of numerous waterfalls in a canyon during autumn" onclick="showImage(this)">
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/skogafoss-waterfall-iceland.jpg"
+                        alt="Image of a small waterfall over the horizon" onclick="showImage(this)">
+                </div>
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/5d921bea21214c78770562c9.webp"
+                        alt="Image of an island with a beach" onclick="showImage(this)">
+                </div>
+            </div>
+            <div class="column">
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/peak-mountains.webp" alt="Image of two grassy mountain peaks"
+                        onclick="showImage(this)">
+                </div>
+                <div class="image-hover-zoom">
+                    <img src="images/homepagegallery/mirrorlake.jpg" alt="Image of a mirrored lake"
+                        onclick="showImage(this)">
+                </div>
             </div>
         </div>
-        <div class="column">
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/antarctica.jpg" alt="Image of icebergs under a sunset in Antarctica" onclick="showImage(this)">
-            </div>
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/featuredwaterfalls.jpg" alt="Image of numerous waterfalls in a canyon during autumn" onclick="showImage(this)">
-            </div>
-        </div>
-        <div class="column">
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/skogafoss-waterfall-iceland.jpg" alt="Image of a small waterfall over the horizon" onclick="showImage(this)">
-            </div>
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/5d921bea21214c78770562c9.webp" alt="Image of an island with a beach" onclick="showImage(this)">
-            </div>
-        </div>
-        <div class="column">
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/peak-mountains.webp" alt="Image of two grassy mountain peaks" onclick="showImage(this)">
-            </div>
-            <div class="image-hover-zoom">
-                <img src="images/homepagegallery/mirrorlake.jpg" alt="Image of a mirrored lake" onclick="showImage(this)">
-            </div>
-        </div>
-    </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="caption"></div>
-    </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
 
+    </section>
     <script src="script.js" async defer></script>
+    <footer class="footer">
+        <p> Copyright &#169; 2024, Jarno Ryhänen </p>
+    </footer>
 </body>
-<footer class="footer">
-    <p> Copyright &#169; 2024, Jarno Ryhänen </p>
-</footer>
 
 </html>
