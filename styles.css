@@ -5,6 +5,8 @@ Colors
 #282633 black
 */
 
+
+/* from here up to line 131 is just basic CSS styling */
 body {
     padding: 0;
     margin: 0;
@@ -12,7 +14,6 @@ body {
     background-color: #F5F5F5;
     overflow-x: hidden;
 }
-
 
 header {
     position: relative;
