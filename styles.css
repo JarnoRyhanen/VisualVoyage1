@@ -1,8 +1,8 @@
 /*
-värit
-#1C3257 sininen
-#F5F5F5 valkoinen
-#282633 musta
+Colors
+#1C3257 blue
+#F5F5F5 white
+#282633 black
 */
 
 body {
@@ -34,7 +34,7 @@ section {
     align-content: space-around;
 }
 
-.navBar .logo {
+.logo {
     margin-right: auto;
     font-size: large;
 }
@@ -55,18 +55,21 @@ section {
     color: #1C3257;
     font-family: 'Lato';
     font-weight: bolder;
-    max-height: 300px;
     max-width: 600px;
-    height: 300px;
+    height: fit-content;
     text-align: center;
     top: 0;
-    left: 25vw;
-    right: 25vw;
+    left: 20vw;
+    right: 20vw;
     z-index: 2;
 }
 
+.textBox h2 {
+    font-size: 36px;
+}
+
 .title {
-    font-size: 40px;
+    font-size: 48px;
 }
 
 .cta-button {
@@ -77,11 +80,11 @@ section {
 }
 
 .heading2 {
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     font-family: 'Lato';
     color: #1C3257;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .footer {
@@ -96,8 +99,13 @@ section {
     align-items: center;
 }
 
+.email {
+    font-size: 24px;
+    color: #1C3257;
+}
+
 p {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 a {
@@ -108,6 +116,7 @@ a {
     padding: 5px;
 }
 
+.active,
 .navBar a:hover {
     background-color: #F5F5F5;
     opacity: 100%;
@@ -120,19 +129,18 @@ img {
     width: 100%;
 }
 
+/* These blocks style the images on the Home and Gallery -pages, and add the zoom animation on hover */
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-/* something here */
-
 .column {
-    flex: 24.4%;
-    max-width: 24.4%;
-    padding: 0 4px;
-    min-width: 20%;
+    flex: 25%;
+    max-width: 25%;
+    min-width: 25%;
 }
 
 .image-hover-zoom {
@@ -152,8 +160,17 @@ img {
     transform: scale(1.5);
 }
 
+/* Show 2 columns instead of 4 when screen size is less than 1200 pixels wide */
+
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 100%;
+        max-width: 50%;
+    }
+}
+
 /* This block here adjust variables like font size and margins 
-for screens that are less than 767 pixels wide */
+for tablet screen sizes */
 
 @media screen and (max-width: 767px) {
 
@@ -176,14 +193,17 @@ for screens that are less than 767 pixels wide */
         font-size: 20px;
     }
 
+    .textBox h2 {
+        font-size: 24px;
+    }
+
+    .email {
+        font-size: 16px;
+    }
+
     .cta-button {
         font-size: 16px;
         padding: 8px;
-    }
-
-    .column {
-        flex: 100%;
-        max-width: 48%;
     }
 }
 
@@ -192,7 +212,7 @@ for screens that are less than 767 pixels wide */
 }
 
 /* This block here adjust variables like font size and margins 
-for screens that are less than 479 pixels wide */
+for mobile screen sizes */
 
 @media screen and (max-width: 479px) {
 
@@ -230,6 +250,7 @@ for screens that are less than 479 pixels wide */
         font-size: 16px;
     }
 
+    .email,
     .textBox p {
         margin-bottom: 5px;
         font-size: 10px;
@@ -246,7 +267,6 @@ for screens that are less than 479 pixels wide */
     }
 
     .column {
-        flex: 100%;
         max-width: 100%;
     }
 
