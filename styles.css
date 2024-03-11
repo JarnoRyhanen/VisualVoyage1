@@ -181,7 +181,7 @@ for tablet screen sizes */
 
     .textBox {
         left: 10vw;
-        right: 10vw;
+        right: 1vw;
     }
 
     .textBox p {
@@ -234,8 +234,8 @@ for mobile screen sizes */
         background-color: #1C3257;
         right: 0;
         left: 0;
-        top: 5vh;
         z-index: 3;
+        top: 5.5vh;
     }
 
     .navBar .links a {
