@@ -24,12 +24,9 @@ span.onclick = function () {
 // When the user clicks the hamburger menu icon, shows the mobile navigation
 function openDropDown() {
   let links = document.getElementById("links");
-  let section = document.getElementById("section");
   if (links.style.visibility === "visible") {
     links.style.visibility = "collapse";
-    section.style.top = "0vh";
   } else {
     links.style.visibility = "visible";
-    section.style.top = "8vh";
   }
 }
